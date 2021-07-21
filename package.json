@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --loader:.js=jsx --outfile=dist/index.js",
+		"serve": "serve ."
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.15",
+    "serve": "^12.0.0"
+  }
+}
