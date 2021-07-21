@@ -1,12 +1,12 @@
 const Neact = require('./neact')
 
 /** @jsx Neact.createElement */
-const element = (
-	<div>
-		<a>bar</a>
-		<b/>
-	</div>
-)
+
+function App(props) {
+	return <h1>Hi {props.name}</h1>
+}
+
+const element = <App name="Naturalclar" />
 
 const container = document.getElementById("root")
 
